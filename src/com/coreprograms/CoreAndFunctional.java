@@ -85,4 +85,21 @@ public class CoreAndFunctional {
             i = i + 1;
         }
     }
+
+    public static void primeFactors(){
+        int number;
+        Scanner prime = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        number = prime.nextInt();
+
+        for (int i = 2; i < number; i++) {
+            while (number % i == 0) {
+                System.out.println(i + " ");
+                number = number / i;
+            }
+        }
+        if (number > 2) {
+            System.out.println(number);
+        }
+    }
 }
