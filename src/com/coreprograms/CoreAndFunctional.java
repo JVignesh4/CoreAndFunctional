@@ -142,4 +142,19 @@ public class CoreAndFunctional {
         System.out.println("x = " + x);
         System.out.println("y = " + y);
     }
+
+    public static void vowel_And_Consonant(){
+        char character;
+        Scanner ch = new Scanner(System.in);
+        System.out.println("Enter the Character : ");
+        character = ch.next().charAt(0);
+
+        if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u')
+            System.out.println(character + " is vowel");
+        else if (character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U')
+            System.out.println(character + " is vowel");
+        else
+            System.out.println(character + " is consonant");
+
+    }
 }
