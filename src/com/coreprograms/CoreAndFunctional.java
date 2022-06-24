@@ -61,6 +61,16 @@ public class CoreAndFunctional {
             else
                 System.out.println("Z = " + Z + " is the largest number.");
         }
+    }
 
+    public static void leapYear(){
+        int year;
+        System.out.println("Enter an Year : ");
+        Scanner yr = new Scanner(System.in);
+        year = yr.nextInt();
+        if (year % 4 == 0) {
+            System.out.println("Specified year is a leap year");
+        } else
+            System.out.println("Specified year is not a leap year");
     }
 }
