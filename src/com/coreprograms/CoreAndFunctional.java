@@ -120,4 +120,26 @@ public class CoreAndFunctional {
         System.out.println("The Quotient is = " + quotient);
         System.out.println("The Remainder is = " + remainder);
     }
+
+    public static void swapNumber(){
+        int x, y;
+        System.out.println("Enter the value for x : ");
+        Scanner value = new Scanner(System.in);
+        x = value.nextInt();
+
+        System.out.println("Enter the value for y : ");
+        y = value.nextInt();
+
+        System.out.println("Before Swap");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+
+        x = (x+y);
+        y = (x-y);
+        x = (x-y);
+
+        System.out.println("After swap");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+    }
 }

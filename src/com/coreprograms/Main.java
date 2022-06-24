@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Please Enter Your Choice ");
         System.out.println("1.CoinFlip Programme \n 2.Even Or Odd Programme \n 3.Largest Number programme" +
                 "\n 4.Leap Year Programme \n 5.Power OF Two Programme \n 6.Prime Factor Programme " +
-                "\n 7.Quotient And Reminder Programme" );
+                "\n 7.Quotient And Reminder Programme \n 8.Swap Number Programme" );
 
         Scanner scanner = new Scanner(System.in);
         int option =scanner.nextInt();
@@ -33,6 +33,8 @@ public class Main {
                 primeFactors();
             case 7:
                 quotientAndReminder();
+            case 8:
+                swapNumber();
             default:
                 System.out.println("Please Enter Correct option");
         }
